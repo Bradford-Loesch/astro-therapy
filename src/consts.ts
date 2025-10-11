@@ -3,5 +3,4 @@
 
 export const SITE_TITLE = "Neuro Inclusive Speech Therapy, LLC";
 export const SITE_DESCRIPTION = "Neuro Inclusive Speech Therapy, LLC: Offering pediatric and adult services in your home or via telehealth.";
-export const RESEND_API_KEY="re_j4Rscj6g_9K5gGDP6Yb9fgrn2aFgAJbGz"
-export const SEND_EMAIL_FROM="support@neuroinclusivetherapy.com"
+export const SEND_EMAIL_TO="support@neuroinclusivetherapy.com"

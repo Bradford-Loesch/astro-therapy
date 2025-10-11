@@ -1,8 +1,9 @@
 import { createTransport, type Transporter } from "nodemailer";
+import { SEND_EMAIL_TO } from "../consts";
 
 type SendEmailOptions = {
   /** Email address of the recipient */
-  to: string;
+  from: string;
   /** Subject line of the email */
   subject: string;
   /** Message used for the body of the email */
@@ -13,8 +14,8 @@ export async function sendEmail(options: SendEmailOptions): Promise<Transporter>
   const transporter = await getEmailTransporter();
   return new Promise(async (resolve, reject) => {
     // Build the email message
-    const { to, subject, html } = options;
-    const from = import.meta.env.SEND_EMAIL_FROM;
+    const { from, subject, html } = options;
+    const to = SEND_EMAIL_TO;
     const message = { to, subject, html, from };
     // Send the email
     transporter.sendMail(message, (err, info) => {
@@ -24,8 +25,10 @@ export async function sendEmail(options: SendEmailOptions): Promise<Transporter>
         reject(err);
       }
       // Log the message ID and preview URL if available.
-      console.log("Message sent:", info.messageId);
-      resolve(info);
+      if (info?.messageId) {
+          console.log("Message sent:", info.messageId);
+          resolve(info);
+      }
     });
   });
 }

@@ -1,9 +1,9 @@
 {
   "name": "astro-therapy",
-  "description": "Build a personal website, blog, or portfolio with Astro.",
+  "description": "Neuro Inclusive Speech Therapy, LLC: business website",
   "private": true,
   "cloudflare": {
-    "label": "Astro Framework Starter",
+    "label": "Neuro Inclusive Speech Therapy",
     "products": [
       "Workers"
     ],
@@ -13,16 +13,17 @@
     "publish": true
   },
   "dependencies": {
-    "@astrojs/cloudflare": "12.6.0",
-    "@astrojs/mdx": "4.3.0",
-    "@astrojs/rss": "4.0.11",
+    "@astrojs/cloudflare": "^12.6.10",
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "3.4.1",
-    "astro": "5.10.1",
+    "astro": "^5.14.4",
     "nodemailer": "^7.0.9",
-    "typescript": "5.8.3"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "wrangler": "4.21.x"
+    "@types/nodemailer": "^7.0.2",
+    "wrangler": "^4.42.x"
   },
   "scripts": {
     "astro": "astro",

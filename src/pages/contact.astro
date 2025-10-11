@@ -1,41 +1,79 @@
 ---
-import Layout from '../layouts/InfoPage.astro';
+import Layout from "../layouts/InfoPage.astro";
 ---
 
 <Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
+    title="Contact"
+    description="Please fill out the form below to contact me."
 >
-	---
----
+    <body class="contact-body">
+        <h3>Contact Neuro Inclusive Speech Therapy with questions or to schedule an appointment today!</h3>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Email with Astro + Resend</title>
-  </head>
-  <body>
-    <h1>Email with Astro + Resend</h1>
+        <form action="/actions/send-email" method="post">
+            <div>
+                <label for="send-email__from">Your Email Address:</label>
+                <input
+                    type="text"
+                    name="from"
+                    id="send-email__from"
+                    required
+                />
+            </div>
+            <div>
+                <label for="send-email__subject">Subject:</label>
+                <input
+                    type="text"
+                    name="subject"
+                    id="send-email__subject"
+                    required
+                />
+            </div>
+            <div>
+                <label for="send-email__message">Message:</label>
+                <textarea name="message" id="send-email__message" required
+                ></textarea>
+            </div>
+            <input type="submit" value="Send message" />
+        </form>
+    </body>
+    <style>
+        h3 {
+            padding: 0 10%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        form {
+            padding: 0 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
 
-    <form action="/actions/send-email" method="post">
-      <div>
-        <label for="send-email__recipient">To:</label>
-        <input type="email" name="recipient" id="send-email__recipient" required />
-      </div>
-      <div>
-        <label for="send-email__subject">Subject:</label>
-        <input type="text" name="subject" id="send-email__subject" required />
-      </div>
-      <div>
-        <label for="send-email__message">Message:</label>
-        <textarea name="message" id="send-email__message" required></textarea>
-      </div>
-      <input type="submit" value="Send message" />
-    </form>
-  </body>
-</html>
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
 
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </Layout>
