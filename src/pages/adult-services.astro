@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/InfoPage.astro';
+---
+
+<Layout
+	title="Adult Services"
+	description="Speach Therapy Services for Adults"
+>
+	<div class="container">
+		<div class="first">
+			<h3>Speech and Communication Therapy</h3>
+			<p>
+				You may benefit from speech and communication services if you have been diagnosed with the following:
+				<li>Stroke</li>
+				<li>Brain Injury</li>
+				<li>Parkinson's Disease</li>
+				<li>Primary Progressive Aphasia</li>
+			</p>
+		</div>
+		<div class="divider wave-1"></div>
+		<div class="second">
+			<h3>Cognitive Communication Therapy</h3>
+			<p>
+				You may benefit from cognitive-communication services if you have been diagnosed with the following:
+				<li>Traumatic Brain Injury</li>
+				<li>Concussion</li>
+				<li>Stroke</li>
+				<li>Brain Tumor</li>
+				<li>Mild Cognitive Impairment (MCI)</li>
+			</p>
+		</div>
+	</div>
+
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: stretch;
+		}
+		.first {
+			padding-top: 50px;
+			padding-left: 10%;
+			padding-right: 10%;
+			background-color: #93818E;
+		}
+		.second {
+			padding-left: 10%;
+			padding-right: 10%;
+			padding-bottom: 100px;
+			background-color: #EED594;
+		}
+		.divider {
+			aspect-ratio: 2/1;
+			background: no-repeat center;
+			background-size: cover;
+			max-height: 400px;
+		}
+		.wave-1 {
+			background-image: url('/divider.svg');
+		}
+		li {
+			margin-left: 20%;
+		}
+	</style>
+</Layout>
