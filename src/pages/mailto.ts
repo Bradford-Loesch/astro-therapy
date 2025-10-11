@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { sendEmail } from "../../utils/email";
+import { sendEmail } from "../utils/email";
 
 export const prerender = false;
 
