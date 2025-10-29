@@ -8,66 +8,39 @@ import Layout from '../layouts/InfoPage.astro';
 >
 	<div class="container">
 		<div class="first top">
-			<h3>Language Therapy</h3>
-			<p>
-				Individualized language services for all sommunications types invludig AAC evaluation and treatment.
-			</p>
+            <h3>Cognitive Communication Therapy</h3>
+            <div class="withimage">
+                <p>
+                    Comprehensive services for treatment of skills such as memory, attention, planning, organization, and problem solving following brain differences or changes due to illness or injury.
+                </p>
+                <div class="image">
+                    <img src="/public/cognitive.jpg" alt="Cognitive Communication" />
+                </div>
+            </div>
 		</div>
 		<div class="divider wave-1"></div>
 		<div class="second">
-			<h3>Feeding Therapy</h3>
-			<p>
-				Comprehensive feeding services for feeding and swallowing challenges that stem from neurological conditions.
-			</p>
+			<h3>Feeding</h3>
+            <div class="withimage">
+                <p>
+                    Comprehensive feeding services for feeding and swallowing challenges that stem from neurological conditions. I specialize in treating sensory-behavioral feeding issues that may or may not also have swallowing impairments present in children 6 months or older.
+                </p>
+                <div class="image">
+                    <img src="/public/feeding.jpg" alt="Feeding" />
+                </div>
+            </div>
 		</div>
 		<div class="divider wave-2"></div>
 		<div class="first bottom">
-			<h3>Cognitive Communication Therapy</h3>
-			<p>
-				Comprehensive services for treatment of skills such as memory, attention, planning, organization, and problem solving following brain differences or changes due to illness or injury.
-			</p>
+			<h3>Language Disorders</h3>
+            <div class="withimage">
+                <p>
+                    Individualized therapy for language services for all communication types with parent coaching.  I also offer AAC (Augmentative Alternative Communication) evaluation and treatment.
+                </p>
+                <div class="image">
+                    <img src="/public/languagechild.jpg" alt="Language Disordsers" />
+                </div>
+            </div>
 		</div>
-		
 	</div>
-
-	<style>
-		.container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: stretch;
-		}
-		.top {
-			padding-top: 50px;
-		}
-		.bottom {
-			padding-bottom: 100px;
-		}
-		.first {
-			padding-left: 10%;
-			padding-right: 10%;
-			background-color: #93818E;
-		}
-		.second {
-			padding-left: 10%;
-			padding-right: 10%;
-			background-color: #EED594;
-		}
-		.divider {
-			aspect-ratio: 2/1;
-			background: no-repeat center;
-			background-size: cover;
-			max-height: 400px;
-		}
-		.wave-1 {
-			background-image: url('/divider.svg');
-		}
-		.wave-2 {
-			background-image: url('/divider.svg');
-			transform: rotate(180deg);
-		}
-		li {
-			margin-left: 20%;
-		}
-	</style>
 </Layout>

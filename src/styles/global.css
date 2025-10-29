@@ -5,9 +5,10 @@
  */
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
-  --black: 15, 18, 25;
+  --logo-blue: #314691;
+  --whitish: #faf9fa;
+  --white: #FFFFFF;
+  --black: #000000;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
@@ -35,10 +36,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 600px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
@@ -55,7 +52,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: rgb(var(--black));
   line-height: 1.2;
 }
 h1 {
@@ -126,12 +122,65 @@ hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.top {
+    padding-top: 50px;
+}
+.bottom {
+    padding-bottom: 100px;
+}
+.first {
+    color: var(--whitish);
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--logo-blue);
+}
+.second {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--white);
+}
+.divider {
+    aspect-ratio: 6/1;
+    background: no-repeat center;
+    background-size: cover;
+    max-height: 400px;
+}
+.wave-1 {
+    background-image: url('/logo-divider.svg');
+}
+.wave-2 {
+    background-image: url('/logo-divider.svg');
+    transform: rotate(180deg);
+}
+.image {
+    max-width: 40%;
+    flex-shrink: 0;
+}
+.withimage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 @media (max-width: 720px) {
   body {
     font-size: 18px;
   }
   main {
     padding: 0px;
+  }
+  .image {
+    max-width: 80%;
+  }
+  .withimage {
+    flex-direction: column;
   }
 }
 

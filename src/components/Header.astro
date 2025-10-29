@@ -5,11 +5,12 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2 class="title"><a href="/">{SITE_TITLE}</a></h2>
+		<div class="title"><a href="/"><img src="headerlogo-cropped.svg" alt={SITE_TITLE} /></a></div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/adult-services">Adult Services</HeaderLink>
 			<HeaderLink href="/pediatric-services">Pediatric Services</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
 		<input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -20,6 +21,7 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/adult-services">Adult Services</HeaderLink>
 			<HeaderLink href="/pediatric-services">Pediatric Services</HeaderLink>
+            <HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/contact">Contact</HeaderLink>
 		</nav>
 	</nav>
@@ -61,9 +63,10 @@ import { SITE_TITLE } from '../consts';
 
 	.title {
 		grid-area: 1 / 1 / 2 / 2;
+        padding-right: 10px;
 	}
 	.internal-links {
-		grid-area: 1 / 2 / 2 / 4;
+		grid-area: 1 / 2 / 2 / 5;
 		display: flex;
 		justify-content: center;
 	}

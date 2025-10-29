@@ -1,0 +1,41 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <div class="container">
+                <div class="first top">
+                    <img src="/logo-square-cropped.svg" alt={SITE_TITLE} />
+                    <p>
+                        I’m Nikki Loesch, a speech-language pathologist and the founder of Neuro Inclusive Speech Therapy. I spent almost ten years working and training at the Shirley Ryan AbilityLab in Chicago, ranked by U.S. News and World Report as the number one rehabilitation center in the United States for 35 consecutive years. During that time, I developed my expertise in rehabilitating both pediatric and adult patients.  I also have provided speech therapy services to adults and pediatrics in other hospital settings.  Please see my <a href="/pediatric-services">Pediatric Services</a> and <a href="/adult-services">Adult Services</a> pages for more information about the services I provide.
+                    </p>
+                    
+                </div>
+                <div class="divider wave-1"></div>
+                <div class="second bottom">
+                    <h3>Education and Specializations</h3>
+                    <ul>
+                        <li>Masters of Science in Speech-Language Pathology from Rush University, Chicago</li>
+                        <li>Bachelors degree in Psychology and Sociology from DePaul University, Chicago</li>
+                        <li>Certificate of Clinical Competence from the American Speech-Language Hearing Association (ASHA)</li>
+                        <li>License to practice Speech Pathology in the State of Ohio</li>
+                        <li>Speech therapist in Shirley Ryan Intensive Aphasia Program 2018</li>
+                        <li>LSVT certified</li>
+                        <li>SPEAK OUT! Certified</li>
+                    </ul>
+                </div>
+            </div>
+		</main>
+		<Footer />
+	</body>
+</html>
