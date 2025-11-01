@@ -122,6 +122,11 @@ hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
 }
+ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
 
 .container {
     display: flex;
@@ -140,11 +145,13 @@ hr {
     padding-left: 10%;
     padding-right: 10%;
     background-color: var(--logo-blue);
+    text-align: center;
 }
 .second {
     padding-left: 10%;
     padding-right: 10%;
     background-color: var(--white);
+    text-align: center;
 }
 .divider {
     aspect-ratio: 6/1;
