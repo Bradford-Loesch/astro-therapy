@@ -6,7 +6,7 @@
 
 :root {
   --logo-blue: #314691;
-  --light-blue: #98A3C8;
+  --light-blue: #90D5FF;
   --whitish: #faf9fa;
   --white: #FFFFFF;
   --black: #000000;
@@ -126,6 +126,9 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 
+.align-left {
+    text-align: left;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -165,7 +168,6 @@ hr {
     justify-content: center;
 }
 .rounded-block {
-    border: solid 1px var(--logo-blue);
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
@@ -209,6 +211,10 @@ hr {
     font-size: 18px;
   }
   main {
+    padding: 0px;
+  }
+  .block-container {
+    flex-direction: column;
     padding: 0px;
   }
   .image {
