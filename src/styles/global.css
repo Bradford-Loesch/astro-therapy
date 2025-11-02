@@ -103,18 +103,6 @@ img {
   height: auto;
   border-radius: 8px;
 }
-code {
-  padding: 2px 5px;
-  background-color: #9FA8B3;
-  border-radius: 2px;
-}
-pre {
-  padding: 1.5em;
-  border-radius: 8px;
-}
-pre > code {
-  all: unset;
-}
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
@@ -175,6 +163,12 @@ hr {
     box-shadow: var(--box-shadow);
     flex: 1;
 }
+.image-container {
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 40%;
+}
 .divider {
     aspect-ratio: 6/1;
     background: no-repeat center;
@@ -189,10 +183,10 @@ hr {
     transform: rotate(180deg);
 }
 .lb-wave-1 {
-    background-image: url('/lblue-divider-2.svg');
+    background-image: url('/lb-divider.svg');
 }
 .lb-wave-2 {
-    background-image: url('/lblue-divider-2.svg');
+    background-image: url('/lb-divider.svg');
     transform: rotate(180deg);
 }
 .image {
@@ -216,6 +210,10 @@ hr {
   .block-container {
     flex-direction: column;
     padding: 0px;
+  }
+  .image-container {
+    max-width: 80%;
+    margin-top: 20px;
   }
   .image {
     max-width: 80%;
