@@ -1,10 +1,12 @@
 {
+    "$schema": "./node_modules/wrangler/config-schema.json",
     "name": "astro-therapy",
     "compatibility_date": "2025-04-01",
     "compatibility_flags": [
         "nodejs_compat"
     ],
     "main": "./dist/_worker.js/index.js",
+    "workers_dev": true,
     "assets": {
         "directory": "./dist",
         "binding": "ASSETS"
@@ -13,6 +15,10 @@
         { 
             "pattern": "neuroinclusivespeech.com/*", 
             "zone_name": "neuroinclusivespeech.com" 
+        },
+        { 
+            "pattern": "www.neuroinclusivespeech.com/*", 
+            "zone_name": "www.neuroinclusivespeech.com" 
         }
     ],
     "observability": {
