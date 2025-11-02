@@ -9,6 +9,12 @@
         "directory": "./dist",
         "binding": "ASSETS"
     },
+    "routes": [
+        { 
+            "pattern": "neuroinclusivespeech.com/*", 
+            "zone_name": "neuroinclusivespeech.com" 
+        }
+    ],
     "observability": {
         "enabled": true
     },
