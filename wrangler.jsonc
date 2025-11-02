@@ -18,7 +18,7 @@
         },
         { 
             "pattern": "www.neuroinclusivespeech.com/*", 
-            "zone_name": "www.neuroinclusivespeech.com" 
+            "zone_name": "neuroinclusivespeech.com" 
         }
     ],
     "observability": {
