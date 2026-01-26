@@ -199,6 +199,9 @@ hr {
     flex-direction: row;
     align-items: center;
 }
+.rowflex {
+  display: inline-flex;
+}
 
 @media (max-width: 720px) {
   body {
@@ -210,6 +213,10 @@ hr {
   .block-container {
     flex-direction: column;
     padding: 0px;
+  }
+  .rowflex {
+    display: flex;
+    flex-direction: column;
   }
   .image-container {
     max-width: 80%;
