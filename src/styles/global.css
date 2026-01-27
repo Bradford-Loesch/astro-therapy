@@ -190,6 +190,7 @@ hr {
     transform: rotate(180deg);
 }
 .image {
+    display: flex;
     max-width: 30%;
     padding: 10px;
     flex-shrink: 0;
@@ -198,6 +199,9 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+.flex {
+  display: flex;
 }
 .rowflex {
   display: inline-flex;
